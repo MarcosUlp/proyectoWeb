@@ -1,6 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+
+body {
+    background: linear-gradient(to top, transparent, rgba(239,46,28,.5)), url(/image/La\ Florida\ -\ San\ Luis\ Argentina.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    width: 1000px;
+    height: 550px;
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0,.7);
+    border-radius: 30px;
+    padding: 50px;
+    color: #fff;
 }
 
 h1 {
@@ -9,31 +32,28 @@ h1 {
     color: white;
     padding: 20px;
 }
-.menu{
 
-}
 .menu ul {
     background-color:transparent;
     width: 100%;
     list-style-type: none;
     text-align: center;
-    padding: 0; /* Asegúrate de que no haya padding en el <ul> */
+    padding: 0;
     margin: 0;
 }
 
 .menu li {
-    display: inline-block; /* Cambié de inline-flex a inline-block */
+    display: inline-block; 
 }
+
 .menu a {
     text-decoration: none;
     color: black;
-    padding: 10px 20px; /* Ajusta el padding para mejor espaciado */
+    padding: 10px 20px;
     display: inline-block;
 }
 
-body {
-    background: url(/image/La\ Florida\ -\ San\ Luis\ Argentina.jpeg)
-    no-repeat
-    center center fixed;
-    background-size: cover;
+.contenedor .contenido .right .contenedor-fotos img{
+    width: 2100;
 }
+
