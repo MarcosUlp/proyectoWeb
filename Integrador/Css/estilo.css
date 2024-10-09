@@ -25,35 +25,39 @@ body {
     padding: 50px;
     color: #fff;
 }
-
-h1 {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 20px;
+.contenedor header{
+    overflow: hidden;
 }
-
-.menu ul {
-    background-color:transparent;
-    width: 100%;
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+.contenedor header h1 {
+    float: left;
 }
-
-.menu li {
-    display: inline-block; 
+.contenedor header nav{
+    float: left;
 }
-
-.menu a {
+.contenedor header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.contenedor header nav ul li{
+    margin: 0 30px;
+}
+.contenedor header nav ul li a{
     text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-    display: inline-block;
+    color: #fff;
+    line-height: 33px;
+    font-size: 14px;
+    padding: 5px 10px;
+    transition: .5s;
+    border-radius: 20px;
 }
-
+.contenedor header nav ul li a:hover{
+    background-color: #000;
+    color: #fff;
+}
 .contenedor .contenido .right .contenedor-fotos img{
-    width: 2100;
+    width: 25%;
+    margin: 0 10px;
+    border-radius: 10px;
 }
 
