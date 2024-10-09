@@ -7,9 +7,11 @@
 }
 
 body {
-    background: linear-gradient(to top, transparent, rgba(239,46,28,.5)), url(/image/La\ Florida\ -\ San\ Luis\ Argentina.jpeg);
-    background-size: cover;
+    background: linear-gradient(to top, transparent, rgba(239,46,28,.5)), url(/image/img7.jpg);
+    background-size: 100% 100%;
+    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
