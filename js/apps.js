@@ -40,3 +40,47 @@ document.addEventListener('DOMContentLoaded', function() {
         carouselImage.classList.add('active');
     }, 100); // Retraso pequeño para que la primera imagen se muestre correctamente
 });
+
+/*FORMULARIO INICIO*/
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevenir el envío del formulario
+    let hasError = false;
+
+    // Obtener valores de los campos
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Validación del nombre
+    if (name === '') {
+        alert('El nombre es obligatorio.');
+        hasError = true;
+    }
+
+    // Validación del email usando expresión regular
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)) {
+        alert('Introduce un correo electrónico válido.');
+        hasError = true;
+    }
+
+    // Validación del teléfono usando expresión regular
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+        alert('El número de teléfono debe tener 10 dígitos.');
+        hasError = true;
+    }
+
+    // Validación del mensaje
+    if (message === '') {
+        alert('El mensaje es obligatorio.');
+        hasError = true;
+    }
+
+    // Si no hay errores, mostrar un mensaje de éxito
+    if (!hasError) {
+        alert('Formulario enviado con éxito');
+    }
+});
+/*FORMULARIO FINAL*/

@@ -14,7 +14,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,12 +22,12 @@ body {
 }
 
 .contenedor {
-    width: 1000px;
-    height: 550px;
+    width: 90%;
+    height: 750px;
     max-width: 1000px;
     background-color: rgba(0, 0, 0, .7);
     border-radius: 30px;
-    padding: 50px;
+    padding: 30px;
     color: #fff;
 }
 
@@ -196,5 +196,94 @@ input {
     border: 0;
     outline: none;
     padding: 10px 1px;
-    color: white;
+    color: #333;
 }
+
+/* Título del formulario */
+h6 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+
+/* Estilos para el formulario */
+
+    
+.contact-wrapper {
+    background-color: #f0f0f0;
+    margin-top: 50px;
+    margin-left: 40px;
+    padding: 65px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.form_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container_text_formulario{
+padding: 20px;
+}
+
+.container_text_formulario h5 {
+    font-size: 2rem;
+}
+
+
+label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mensajes de error y éxito */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.success {
+    color: green;
+    margin-top: 20px;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+/*SECCION CONTACTO FORMULARIO FINAL*/
