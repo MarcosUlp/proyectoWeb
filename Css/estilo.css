@@ -14,17 +14,18 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .contenedor {
-    width: 90%;
-    height: 750px;
-    max-width: 1000px;
+    width: 100%;
+    height: 600px;
+    max-width: 1200px;
     background-color: rgba(0, 0, 0, .7);
     border-radius: 30px;
     padding: 30px;
@@ -68,34 +69,28 @@ body {
     color: #fff;
 }
 
-.contenedor .contenido .right .contenedor-fotos img {
-    width: 60%;
-    margin: 0 10px;
-    border-radius: 10px;
-    float: right;
-}
 .contenido {
     display: flex;
     position: relative;
+    flex-direction: column;
     justify-content: space-between;
     height: 100%; /* O ajusta según la altura de la sección */
 }
 
 /* Estilo para la parte izquierda (texto, botones, etc.) */
 .left {
-    width: 30%; /* Ajusta el ancho si es necesario */
     display: flex;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
+    justify-content: center;
 }
 
 /* Estilo para la parte derecha */
-.right {
-    width: 100%;
+.right{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end; /* Alinea el carrusel en la parte baja */
-    position: relative;
+    justify-content: center;
+    align-items: flex-end;
 }
 /* CARRUSEL */
 .container_carrusel {
@@ -104,7 +99,6 @@ body {
     justify-content: center;
     position: relative;
     height: 50vh;
-    width: 60%;
     background-color: #f0f0f0;
     overflow: hidden;
     margin: 0;
