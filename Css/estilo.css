@@ -41,13 +41,15 @@ body {
 }
 
 .contenedor header nav {
-    float: left;
+    display: flex;
+    justify-content: center;
 }
 
 .contenedor header nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 .contenedor header nav ul li {
@@ -78,20 +80,7 @@ body {
 }
 
 /* Estilo para la parte izquierda (texto, botones, etc.) */
-.left {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-}
 
-/* Estilo para la parte derecha */
-.right{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
 /* CARRUSEL */
 .container_carrusel {
     display: flex;
@@ -102,6 +91,8 @@ body {
     background-color: #f0f0f0;
     overflow: hidden;
     margin: 0;
+    width: 50%;
+    margin-bottom: 100px;
 }
 
 .carousel-img {
@@ -147,9 +138,15 @@ body {
 }
 
 
-
-
-
+.text-content {
+    align-items: flex-end;
+    width: 50%; /* Ocupa la mitad derecha */
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-items: flex-start;
+    padding: 20px;
+}
 
 .contenedor .container {
 
