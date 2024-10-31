@@ -72,11 +72,22 @@ body {
 }
 
 .contenido {
+    gap: 20px;
+    align-items: center;
     display: flex;
+    justify-content: space-between;
     position: relative;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%; /* O ajusta según la altura de la sección */
+}
+.text-content {
+    display: flex;
+    width: 45%; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    padding: 20px;
 }
 
 /* Estilo para la parte izquierda (texto, botones, etc.) */
@@ -137,17 +148,6 @@ body {
   right:10px;
 }
 
-
-.text-content {
-    align-items: flex-end;
-    width: 50%; /* Ocupa la mitad derecha */
-    display: flex;
-    flex-direction: column;
-    float: right;
-    align-items: flex-start;
-    padding: 20px;
-}
-
 .contenedor .container {
 
     width: 100%;
@@ -160,7 +160,6 @@ body {
 .contenedor .form-content {
     width: 100%;
     max-width: 450px;
-
     padding: 50px 60px 70px;
     text-align: center;
 }
