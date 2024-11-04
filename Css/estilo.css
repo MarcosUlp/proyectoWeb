@@ -80,7 +80,7 @@ body {
     justify-content: space-between;
     position: relative;
     flex-direction: column;
-    height: 100%; /* O ajusta según la altura de la sección */
+    height: 100%; 
 }
 
 /* Estilo solo para la pagina "Localidades*/
@@ -95,7 +95,7 @@ body {
 }
 
 .Localidades .contenido {
-    height: 520px; /* Fija la altura para que el contenedor no se expanda */
+    height: 520px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +106,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     overflow-y: auto;
-    max-height: 100%; /* Limita la altura al 100% de .contenido */
+    max-height: 100%; 
     padding: 20px;
 }
 
@@ -148,7 +148,7 @@ body {
     padding: 20px;
 }
 
-/* Estilo para la parte izquierda (texto, botones, etc.) */
+
 
 /* CARRUSEL */
 .container_carrusel {
