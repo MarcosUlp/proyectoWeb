@@ -31,6 +31,7 @@ body {
     padding: 20px;
     color: #fff;
     max-width: 1200px;
+    
 }
 
 .contenedor header {
@@ -155,23 +156,25 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 50vh;
+    min-height: 60vh;
+    width: 75%;
     background-color: #f0f0f0;
     overflow: hidden;
     margin: 0;
-    width: 50%;
     margin-bottom: 100px;
+    
 }
 
 .carousel-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.8s ease-in-out; /* Transición suave */
+    transition: opacity 0.8s ease-in-out;
+    background-color: #000;
+    background-size: cover;
 }
 .carousel-img.active {
     opacity: 1;
@@ -179,11 +182,11 @@ body {
 }
 
 .carousel-img.prev {
-    transform: translateX(-100%); /* Imagen anterior se desliza a la izquierda */
+    transform: translateX(-100%);
 }
 
 .carousel-img.next {
-    transform: translateX(100%); /* Imagen siguiente se desliza a la derecha */
+    transform: translateX(100%);
 }
 .carousel-btn {
     background-color: transparent;
@@ -246,17 +249,11 @@ input {
     color: #333;
 }
 
-/* Título del formulario */
 h6 {
     font-size: 2.2rem;
     color: #333;
     margin-bottom: 20px;
 }
-
-
-
-/* Estilos para el formulario */
-
     
 .contact-wrapper {
     background-color: #f0f0f0;
@@ -312,7 +309,6 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Mensajes de error y éxito */
 .error {
     color: red;
     font-size: 12px;
@@ -333,4 +329,35 @@ button:hover {
     display: none;
 }
 
-/*SECCION CONTACTO FORMULARIO FINAL*/
+
+.Carolina .contenido {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100%; 
+}
+
+.Carolina .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Carolina .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.Carolina .text-content {
+    flex: 1; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
