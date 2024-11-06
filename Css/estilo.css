@@ -31,6 +31,7 @@ body {
     padding: 20px;
     color: #fff;
     max-width: 1200px;
+    overflow-y: auto;
     
 }
 
@@ -339,6 +340,7 @@ button:hover {
     height: 100%; 
 }
 
+
 .Carolina .image-content {
     flex: 1;
     display: flex;
@@ -360,4 +362,20 @@ button:hover {
     justify-content: center;
     align-items: flex-start;
     text-align: left;
+}
+
+.form-errors p.error {
+    color: red;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.form-success .success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 0.9em;
 }
